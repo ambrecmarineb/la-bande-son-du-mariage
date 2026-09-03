@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="base" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8F3"/>
+      <stop offset="55%" stop-color="#FCE5E1"/>
+      <stop offset="100%" stop-color="#FFE1B7"/>
+    </linearGradient>
+    <radialGradient id="blob1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FABC4F" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#FABC4F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blob2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E61661" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#E61661" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blob3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E95515" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#E95515" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sheen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.25"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#base)"/>
+
+  <g filter="url(#soft)">
+    <ellipse cx="220" cy="230" rx="260" ry="220" fill="url(#blob1)"/>
+    <ellipse cx="600" cy="560" rx="300" ry="260" fill="url(#blob2)"/>
+    <ellipse cx="560" cy="180" rx="220" ry="180" fill="url(#blob3)"/>
+    <ellipse cx="240" cy="600" rx="240" ry="200" fill="url(#blob1)"/>
+  </g>
+
+  <path d="M0,520 C150,470 250,570 400,530 C550,490 650,560 800,510 L800,800 L0,800 Z" fill="#FFFFFF" opacity="0.25"/>
+  <path d="M0,300 C180,340 300,260 460,300 C600,335 700,270 800,300 L800,0 L0,0 Z" fill="#FFFFFF" opacity="0.2"/>
+
+  <circle cx="400" cy="400" r="120" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.5"/>
+  <circle cx="400" cy="400" r="86" fill="none" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="1"/>
+  <circle cx="400" cy="400" r="10" fill="#FFFFFF" fill-opacity="0.8"/>
+
+  <rect width="800" height="800" fill="url(#sheen)"/>
+</svg>
