@@ -237,7 +237,7 @@ a { color: inherit; }
 }
 
 .names {
-  font-family: var(--font-display);
+  font-family: "DM Sans", sans-serif;
   font-weight: 600;
   font-size: clamp(28px, 7vw, 38px);
   margin: clamp(20px, 4vh, 28px) 0 8px;
