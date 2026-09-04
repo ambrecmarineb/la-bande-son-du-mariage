@@ -49,8 +49,6 @@ const tracks = [
    2. INITIALISATION DU CONTENU STATIQUE
    ========================================================================= */
 
-document.getElementById("albumKicker").textContent = CONFIG.kicker;
-document.getElementById("albumDate").textContent = CONFIG.date;
 document.getElementById("albumNames").textContent = CONFIG.names;
 document.getElementById("albumTagline").textContent = CONFIG.tagline;
 document.getElementById("trackCountLabel").textContent = `${tracks.length} titres`;
