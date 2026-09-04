@@ -11,8 +11,6 @@
    ========================================================================= */
 
 const CONFIG = {
-  kicker: "Le Mariage",
-  date: "29.08.2026",
   names: "Ambre & Marine",
   tagline: "La bande-son de notre mariage",
   coverImage: "assets/images/pochette.svg",
