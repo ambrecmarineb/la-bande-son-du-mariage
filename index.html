@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nos musiques — Ambre &amp; Prénom</title>
+<meta name="description" content="La bande-son de notre mariage — 29.08.2026">
+<meta name="theme-color" content="#FCE5E1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Fond irisé décoratif -->
+<div class="iris-field" aria-hidden="true">
+  <span></span><span></span><span></span>
+</div>
+
+<main class="page" id="page">
+
+  <header class="album-head">
+    <div class="kicker-row">
+      <p class="kicker" id="albumKicker">Nos musiques</p>
+      <p class="date" id="albumDate">29.08.2026</p>
+    </div>
+
+    <div class="cover-wrap">
+      <div class="cover-halo" aria-hidden="true"></div>
+      <div class="cover-art">
+        <img id="coverImage" src="assets/images/cover-placeholder.svg" alt="Pochette de l'album de mariage">
+        <div class="cover-sheen" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <h1 class="names" id="albumNames">Ambre &amp; Prénom</h1>
+    <p class="tagline" id="albumTagline">La bande-son de notre mariage</p>
+
+    <div class="meta-row">
+      <span id="trackCountLabel">21 titres</span>
+    </div>
+
+    <button class="btn-primary" id="playAllBtn" aria-label="Tout écouter">
+      <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+      <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+      <span id="playAllLabel">Tout écouter</span>
+    </button>
+  </header>
+
+  <ul class="tracklist" id="tracklist" aria-label="Liste des morceaux">
+    <!-- généré par script.js -->
+  </ul>
+
+  <p class="credits">
+    Merci d'avoir scanné notre CD.<br>
+    Cet album vous appartient autant qu'à nous.
+  </p>
+
+</main>
+
+<!-- Mini-player fixe (mobile) -->
+<div class="mini-player" id="miniPlayer" role="region" aria-label="Lecteur en cours">
+  <div class="mini-progress" id="miniProgressTrack" role="slider" aria-label="Progression du morceau" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+    <div class="mini-progress-fill" id="miniProgressFill"></div>
+  </div>
+  <div class="mini-body">
+    <div class="mini-cover">
+      <img id="miniCover" src="assets/images/cover-placeholder.svg" alt="">
+    </div>
+    <div class="mini-info">
+      <p class="mini-title" id="miniTitle">—</p>
+      <p class="mini-artist" id="miniArtist">—</p>
+    </div>
+    <div class="mini-controls">
+      <button id="miniPrev" aria-label="Morceau précédent">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zM20 6v12l-8.5-6z"/></svg>
+      </button>
+      <button class="mini-play" id="miniPlay" aria-label="Lecture / pause">
+        <svg class="mp-icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        <svg class="mp-icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+      </button>
+      <button id="miniNext" aria-label="Morceau suivant">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6h2v12h-2zM4 6v12l8.5-6z"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<audio id="audioEl" preload="none"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
