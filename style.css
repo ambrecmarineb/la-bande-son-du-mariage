@@ -169,7 +169,7 @@ a { color: inherit; }
 }
 
 .kicker-row {
-  display: flex;
+  display: none;
   align-items: baseline;
   justify-content: center;
   gap: 10px;
