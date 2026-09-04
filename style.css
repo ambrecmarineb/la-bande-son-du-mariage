@@ -30,7 +30,7 @@
   /* --- Typographies ---
      Display : pour le titre de l'album / les noms
      Corps   : pour toute l'interface et la tracklist */
-  --font-display: "Fraunces", "Iowan Old Style", "Georgia", serif;
+  --font-display: "DM Sans", "Iowan Old Style", "Georgia", serif;
   --font-body: "Manrope", "Segoe UI", sans-serif;
 
   /* --- Rayons & ombres --- */
